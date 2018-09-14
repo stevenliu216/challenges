@@ -2,7 +2,7 @@ from pytest import fixture
 
 @fixture
 def op():
-    from challenges.Operations import Operations
+    from challenges.Operations_sliu99 import Operations
     return Operations()
 
 def test_add(op):
