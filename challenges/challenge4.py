@@ -11,4 +11,4 @@ def find_magic_index(arr):
             low = mid
     return low
 
-print(magic_index([-1, 0, 1, 2, 4, 10]))
+print(find_magic_index([-1, 0, 1, 2, 4, 10]))
