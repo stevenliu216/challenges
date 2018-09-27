@@ -5,7 +5,7 @@ You have a basketball hoop and someone says that you can play one or two games.
 * Game 1: You get one shot to make the hoop.
 * Game 2: You get three shots and you have to make two out of three.
 
-If p is the probability of making a particular short, for which values of p should you pick one game or the other?
+If p is the probability of making a particular shot, for which values of p should you pick one game or the other?
 
 ### Function prototype:
     def pick_bball_game(p)
