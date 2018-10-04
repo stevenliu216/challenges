@@ -13,14 +13,14 @@ If p is the probability of making a particular shot, for which values of p shoul
 p (float): probability of making a shot, range 0 to 1
  
 ### Return values
-game (int): the game number with the higher chance of winning 
+game (int): the game number with the higher chance of winning, if they have the same probability return 0.
  
 ### Example
 ##### Sample Input
     0.9
  
 ##### Sample Output
-    1
+    2
  
 ### Explanation
-With probability p = 0.9, you have a better chance of winning by playing Game 1.
+With probability p = 0.9, you have a better chance of winning by playing Game 2.
