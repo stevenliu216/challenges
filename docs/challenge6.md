@@ -7,7 +7,7 @@ easier to understand, reuse, and change.
 ### Function prototype:
     class Card:
         def __init__(self, attribute1, attribute2):
-            # This is the initiliazation object
+            # This is the initialization object
             # Replace attribute1 and 2 with the attributes you need for your cards
             self.attribute1 = attribute1
             self.attribute2 = attribute2
