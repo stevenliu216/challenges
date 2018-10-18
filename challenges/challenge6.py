@@ -1,21 +1,28 @@
 class Card:
-    def __init__(self, attribute1, attribute2):
+    def __init__(self, suit, rank):
         # This is the initialization object
-        # Replace attribute1 and 2 with the attributes you need for your cards
-        self.attribute1 = attribute1
-        self.attribute2 = attribute2
+        self.suit = suit
+        self.rank = rank
 
     def __repr__(self):
-        # Insert return statement here in the output format
-        pass
+        # Return "<rank> of <suit>"
+        return self.rank + " of " + self.suit
 
 
-class Desk:
+class Deck:
     def __init__(self):
         # This is the initialization object
         # Initialize the list that will be used to create the deck
-        pass
+        self.cards = []
+        self.rank = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
+        self.suit = ['hearts', 'clubs', 'diamonds', 'spades']
+
+        self.populate()
 
     def populate(self):
-        # Use this method to populate your deck with cards
-        pass
+        # Populate the cards list
+        self.cards = [Card(i,j) for i in self.suit for j in self.rank]
+
+    def __repr__(self):
+        # Return the whole Deck
+        return str(self.cards)
