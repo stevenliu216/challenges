@@ -7,7 +7,7 @@ most water.
 Note: You may not slant the container and n is at least 2.
 ![alt text](challenge8.jpg "Container with the Most Water")
 ### Function prototype:
-    def max_area(self, height):
+    def max_area(height):
  
 height (list): an array of the line heights
 ### Return values
