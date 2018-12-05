@@ -1,12 +1,15 @@
+import sys
 from collections import namedtuple
 import csv
 import unittest
 from unittest.mock import patch
 
 import pytest
-
+sys.path.insert(0, '/home/travis/build/stevenliu216/challenges/challenges/challenge10')
+import tweets
 from tweets import TWEETS  # mock data
-from usertweets import UserTweets, NUM_TWEETS
+import challenge10
+from challenge10 import UserTweets, NUM_TWEETS
 
 HANDLE = 'pybites'
 MAX_ID = '819831370113351680'
