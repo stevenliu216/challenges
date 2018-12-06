@@ -4,9 +4,9 @@ import os
 
 import tweepy
 
-# To prevent pushing keys to git, I created a separate module called config-no-git.py
-from config-no-git import CONSUMER_KEY, CONSUMER_SECRET
-from config-no-git import ACCESS_TOKEN, ACCESS_SECRET
+# To prevent pushing keys to git, I created a separate module called confignogit.py
+from confignogit import CONSUMER_KEY, CONSUMER_SECRET
+from confignogit import ACCESS_TOKEN, ACCESS_SECRET
 
 DEST_DIR = 'data'
 EXT = 'csv'
@@ -30,7 +30,7 @@ class UserTweets(object):
         # ...
         self.handle = handle
         self.max_id = max_id
-        self.output_file = f'{os.path.join(DEST_DIR, self.handle)}.{EXT}'
+        self.output_file = f'{os.path.join(os.path.dirname(__file__), DEST_DIR, self.handle)}.{EXT}'
         self._tweets = list(self._get_tweets())
         self._save_tweets()
 
@@ -47,7 +47,7 @@ class UserTweets(object):
         If you use a namedtuple get the column names with Tweet._fields.
         Otherwise define them as: id_str created_at text
         You can use writerow for the header, writerows for the rows"""
-        with open(self.output_file, 'w', encoding="utf-8") as f:
+        with open(self.output_file, 'w', encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(Tweet._fields)
             writer.writerows(self._tweets)
