@@ -23,8 +23,8 @@ full sentiment analysis.
 
     import tweepy
 
-    from config import CONSUMER_KEY, CONSUMER_SECRET
-    from config import ACCESS_TOKEN, ACCESS_SECRET
+    from .config import CONSUMER_KEY, CONSUMER_SECRET
+    from .config import ACCESS_TOKEN, ACCESS_SECRET
 
     DEST_DIR = 'data'
     EXT = 'csv'
@@ -47,7 +47,7 @@ full sentiment analysis.
 
         def _get_tweets(self):
             """Hint: use the user_timeline() method on the api you defined in init.
-            See tweepy API reference: http://docs.tweepy.org/en/v3.5.0/api.html
+            See tweepy API reference: http://docs.tweepy.org/en/v3.7.0/api.html
             Use a list comprehension / generator to filter out fields
             id_str created_at text (optionally use namedtuple)"""
             pass
