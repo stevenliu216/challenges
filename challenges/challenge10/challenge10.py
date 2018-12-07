@@ -5,8 +5,8 @@ import os
 import tweepy
 
 # To prevent pushing keys to git, I created a separate module called confignogit.py
-from confignogit import CONSUMER_KEY, CONSUMER_SECRET
-from confignogit import ACCESS_TOKEN, ACCESS_SECRET
+from challenges.challenge10.config import CONSUMER_KEY, CONSUMER_SECRET
+from challenges.challenge10.config import ACCESS_TOKEN, ACCESS_SECRET
 
 DEST_DIR = 'data'
 EXT = 'csv'
