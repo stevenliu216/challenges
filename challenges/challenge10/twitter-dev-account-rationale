@@ -1,0 +1,4 @@
+1. Learn more programming with Python using the twitter API. I will use the tweepy package to pull tweets on Twitter, store them and then display them locally. I will then use analysis to look for similar users based on their tweets.
+2. How to pull information from an API
+3. No, I will not be tweeting content
+4. No, twitter data will only be used on my local computer
