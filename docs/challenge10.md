@@ -23,8 +23,8 @@ full sentiment analysis.
 
     import tweepy
 
-    from .config import CONSUMER_KEY, CONSUMER_SECRET
-    from .config import ACCESS_TOKEN, ACCESS_SECRET
+    from challenges.challenge10.config import CONSUMER_KEY, CONSUMER_SECRET
+    from challenges.challenge10.config import ACCESS_TOKEN, ACCESS_SECRET
 
     DEST_DIR = 'data'
     EXT = 'csv'
