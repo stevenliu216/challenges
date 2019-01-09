@@ -11,7 +11,7 @@ For each multiple of 5, print "Buzz" instead of the number.
 For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 
 ### Function prototype:
-    def fizz_buzz(game_length);
+    def fizz_buzz(game_length):
  
 game_length (int): The number to play to, from 1 to game_length
  
