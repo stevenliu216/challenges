@@ -2,9 +2,11 @@ sudo: required
 dist: xenial
 language: python
 python:
-- '3.7'
+    - '3.7'
 install:
-- pip install -r requirements.txt
+    - pip install -r requirements.txt
 script:
-- pytest -v
+    - pytest -v --cov=./challenges
 after_script: cd ~
+after_success:
+    - codecov --token=93ad593e-6ce8-48ef-936b-460f883b90d4
