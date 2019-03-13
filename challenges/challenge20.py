@@ -23,10 +23,9 @@ def print_rangoli(size):
                 if column != size * 2 - 1:
                     line = line + "-"
         rangoli = rangoli + line.center(width, "-") + "\n"
-    print(rangoli)
     return rangoli
 
 
 if __name__ == '__main__':
     n = int(input())
-    print_rangoli(n)
+    print(print_rangoli(n))
