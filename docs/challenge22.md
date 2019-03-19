@@ -17,10 +17,7 @@ A valid mobile number is a ten digit number starting with 313 or 248.
 
     if __name__ == '__main__':
         n = int(input("Enter number of phone numbers: "))
-        phone_number_list = []
-        for number in range(n):
-            entered_num = input("Phone number " + str(number + 1) + ": ")
-            phone_number_list.append(entered_num)
+        phone_number_list = [input("Phone number " + str(number + 1) + ": ") for number in range(n)]
         print(*validate_phone_number(phone_number_list), sep="\n")
     
 
