@@ -16,6 +16,23 @@ For Japreece Dean, the output should be:
 
     Ms. Japreece Dean
 
+### Function Prototype
+    def person_lister(func):
+        def inner(people):
+            # Your code here
+        return inner
+
+
+    @person_lister
+    def name_format(person):
+        return ("Mr. " if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
+
+
+    if __name__ == "__main__":
+        n = int(input("Enter number of names to format: "))
+        people = [input("Enter name age gender " + str(i + 1) + ": ").split() for i in range(n)]
+        print(*name_format(people), sep="\n")
+        
 ### Input Format
 
 The first line contains the integer N, the number of people. N lines follow each
