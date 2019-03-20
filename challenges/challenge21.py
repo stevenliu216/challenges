@@ -1,16 +1,13 @@
 def replace_spaces_dashes(line):
-    no_spaces = "-".join(line.split())
-    return no_spaces
+    return "-".join(line.split())
 
 
 def last_five_lowercase(line):
-    five_lowercase = line[-5:].lower()
-    return five_lowercase
+    return line[-5:].lower()
 
 
 def backwards_skipped(line):
-    back_skip = line[::-2]
-    return back_skip
+    return line[::-2]
 
 
 if __name__ == '__main__':
