@@ -15,5 +15,6 @@ def name_format(person):
 
 
 if __name__ == "__main__":
-    people = [input().split() for i in range(int(input()))]
+    n = int(input("Enter number of names to format: "))
+    people = [input("Enter name age gender " + str(i + 1) + ": ").split() for i in range(n)]
     print(*name_format(people), sep="\n")
