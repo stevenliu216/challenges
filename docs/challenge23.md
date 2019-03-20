@@ -1,4 +1,4 @@
-# Chellenge 23
+# Challenge 23
 
 ### Decorators to Create a Name Directory
 
