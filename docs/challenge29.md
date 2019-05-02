@@ -13,7 +13,7 @@ below. Note that 1 does not map to any letters.
     from types import List
 
 
-    def letter_combinations(self, digits: str) -> List[str]:
+    def letter_combinations(digits: str) -> List[str]:
         pass
     
     
