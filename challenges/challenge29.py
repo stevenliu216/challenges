@@ -3,15 +3,16 @@ import itertools
 
 
 def letter_combinations(digits: str) -> List[str]:
-    number_pad = {"2": ("a", "b", "c"),
-                  "3": ("d", "e", "f"),
-                  "4": ("g", "h", "i"),
-                  "5": ("j", "k", "l"),
-                  "6": ("m", "n", "o"),
-                  "7": ("p", "q", "r", "s"),
-                  "8": ("t", "u", "v"),
-                  "9": ("w", "x", "y", "z"),
-                  }
+    number_pad = {
+        "2": ("a", "b", "c"),
+        "3": ("d", "e", "f"),
+        "4": ("g", "h", "i"),
+        "5": ("j", "k", "l"),
+        "6": ("m", "n", "o"),
+        "7": ("p", "q", "r", "s"),
+        "8": ("t", "u", "v"),
+        "9": ("w", "x", "y", "z"),
+    }
     letter_groups = []
     for num in digits:
         letter_groups.append(number_pad[num])
