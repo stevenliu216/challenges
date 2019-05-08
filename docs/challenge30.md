@@ -30,11 +30,11 @@ if __name__ == '__main__':
 ### Example
 
 #### Input
-5
-2 3 6 6 5
+    5
+    2 3 6 6 5
 
 #### Output
-5
+    5
 
 #### Explanation
 
