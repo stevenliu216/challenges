@@ -1,8 +1,12 @@
 ENV/
+venv/
+
 *.pyc
 .pytest_cache/
 */__pycache__
 dist/
 MANIFEST.in
 .coverage
+
 .idea
+.vscode
