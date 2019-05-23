@@ -21,6 +21,21 @@ The third and fourth lines contain m integers, A and B, respectively.
 
 Output a single integer, your total happiness.
 
+### Function Prototype
+
+```
+def calc_happiness(valid_elements, pos_adder, neg_adder):
+    pass
+    
+    
+if __name__ == "__main__":
+    m, n = input("Enter the space-separated values of m and n: ").split()
+    valid_elements = [int(num) for num in input("Enter the valid elements of the array: ").split()]
+    a = [int(num) for num in input(f"Enter the array A: ").split()]
+    b = [int(num) for num in input("Enter the array B: ").split()]
+    print(f"The happiness is {calc_happiness(valid_elements, a, b)}")
+```
+
 ### Sample Input
 
 ```
