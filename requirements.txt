@@ -2,5 +2,5 @@ pytest==3.6.0
 tweepy==3.7.0
 mock==2.0.0
 numpy==1.16.0
-codecov==2.0.15
+codecov==2.0.16
 pytest-cov==2.6.1
